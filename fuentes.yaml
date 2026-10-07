@@ -1,0 +1,19 @@
+# Dominios y URLs oficiales permitidos como fuentes (lista blanca).
+# El script solo usa URLs de temas.csv que pertenezcan a estos dominios.
+dominios_permitidos:
+  - content.naic.org
+  - naic.org
+  - myfloridacfo.com
+  - floir.gov
+  - flsenate.gov
+  - irs.gov
+  - medicare.gov
+  - acl.gov
+  - consumerfinance.gov
+  - hud.gov
+  - ftc.gov
+  - consumidor.ftc.gov
+  - licenseesearch.fldfs.com
+  - fldfs.com
+
+# Nota: ssa.gov queda fuera (responde 403 a descargas automáticas).

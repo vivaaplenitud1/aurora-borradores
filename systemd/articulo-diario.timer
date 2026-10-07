@@ -1,0 +1,11 @@
+[Unit]
+Description=Temporizador: borrador diario a las 10:17 America/New_York
+
+[Timer]
+# systemd interpreta la zona; maneja DST sin cambiar la TZ de todo el VPS
+OnCalendar=*-*-* 10:17:00 America/New_York
+Persistent=true
+RandomizedDelaySec=90
+
+[Install]
+WantedBy=timers.target

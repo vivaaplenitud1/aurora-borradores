@@ -1,0 +1,17 @@
+[Unit]
+Description=Generar borrador diario (usagastosfinales.com) — nunca publica
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# Ajustar User y WorkingDirectory en el VPS
+User=jose
+WorkingDirectory=/home/jose/aurora-borradores
+EnvironmentFile=-/home/jose/aurora-borradores/.env
+ExecStart=/home/jose/aurora-borradores/.venv/bin/python generar.py
+Nice=10
+
+# Sin redirección de secretos a logs
+StandardOutput=journal
+StandardError=journal

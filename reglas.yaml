@@ -1,0 +1,66 @@
+# Reglas de calidad y cumplimiento (Florida 69O-150.x, s. 626.9541).
+# El filtro BLOQUEA el borrador si falla alguna regla.
+
+eslogan: "Ordena tu vida. Honra tu legado."
+marca_referencia: "https://legacy-assured-shield.lovable.app/"
+cta_neutra: "Hable con un agente licenciado para revisar sus opciones."
+descargo: >-
+  Contenido educativo. Los beneficios en vida dependen de las cláusulas
+  (*riders*) de cada póliza; los beneficios, la elegibilidad y los costos
+  dependen de la aseguradora y de la evaluación de riesgo (*underwriting*).
+  No es asesoría legal ni fiscal. No está afiliado con ningún prestamista
+  ni agencia del gobierno.
+marca_revision_html: "<!-- borrador-ia: revisar -->"
+palabras_min: 900
+palabras_max: 1400
+excerpt_max: 155
+fuentes_minimas: 2
+
+prohibido_regex:
+  - "\\btestament\\w*"
+  - "aprobaci[oó]n\\s+garantizada"
+  - "\\bgarantizado\\b"
+  - "sin\\s+rechazo"
+  - "el\\s+precio\\s+m[aá]s\\s+bajo"
+  - "le\\s+costar[aá]\\s+\\$"
+  - "cobertura\\s+asegurada"
+  - "Medicare\\s+paga"
+  - "su\\s+(banco|prestamista)\\s+requiere"
+  - "seguro\\s+de\\s+muerte"
+  - "\\blovable\\b"
+  - "programa\\s+federal"
+  - "programa\\s+del\\s+gobierno"
+  - "aprobado\\s+por\\s+el\\s+gobierno"
+  - "aprobado\\s+por\\s+el\\s+estado"
+  - "beneficio\\s+del\\s+gobierno\\s+federal"
+  - "\\bgratis\\b"
+  - "\\bsin\\s+costo\\b"
+  - "\\bfree\\b"
+  - "\\bnpn\\b"
+  - "licencia\\s*(n[oº°.#]|number|núm)"
+  - "\\b[A-Za-z]\\d{6}\\b"
+  - "\\b\\d{1,5}\\s+[\\w.]+\\s+(?:st|ave|blvd|rd|dr|ln|ct|way|calle|avenida|boulevard)\\b"
+  - "\\b(?:\\+?1[-.\\s]?)?\\(?\\d{3}\\)?[-.\\s]?\\d{3}[-.\\s]?\\d{4}\\b"
+  - "\\bREVISAR\\b"
+  - "\\bmonarch\\b"
+  - "mutual\\s+of\\s+omaha"
+  - "\\bprudential\\b"
+  - "\\bmetlife\\b"
+  - "\\bnew\\s+york\\s+life\\b"
+  - "\\bnationwide\\b"
+  - "\\ballstate\\b"
+  - "\\bstate\\s+farm\\b"
+  - "\\baflac\\b"
+  - "\\btransamerica\\b"
+  - "\\bgerber\\b"
+  - "\\bcolonial\\s+penn\\b"
+
+permitir_si_cita_irs:
+  - "impuesto\\s+federal"
+
+exigir:
+  eslogan_exacto: true
+  ultima_voluntad_no_testamento: true
+  aurora_es_organizador: true
+  fuentes_oficiales: true
+  descargo_al_final: true

@@ -1,0 +1,20 @@
+PASS  test_articulo_limpio_pasa
+PASS  test_bloquea_testamento
+PASS  test_bloquea_lovable
+PASS  test_bloquea_garantizado
+PASS  test_bloquea_gratis
+PASS  test_bloquea_npn_y_licencia
+PASS  test_bloquea_direccion
+PASS  test_bloquea_competidor
+PASS  test_bloquea_sin_fuentes
+PASS  test_impuesto_federal_exige_irs
+PASS  test_impuesto_federal_ok_con_irs
+PASS  test_comentario_html_revisar_no_bloquea
+
+12/12 ok
+PASS  test_validar_status_solo_draft
+PASS  test_exigir_draft_fuerza_y_aborta
+PASS  test_payload_sin_status_queda_draft
+PASS  test_generar_construir_payload_siempre_draft
+
+4/4 ok

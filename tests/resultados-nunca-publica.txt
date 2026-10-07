@@ -1,0 +1,6 @@
+PASS  test_validar_status_solo_draft
+PASS  test_exigir_draft_fuerza_y_aborta
+PASS  test_payload_sin_status_queda_draft
+PASS  test_generar_construir_payload_siempre_draft
+
+4/4 ok
